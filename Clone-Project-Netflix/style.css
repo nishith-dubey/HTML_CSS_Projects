@@ -1,0 +1,263 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #000000 !important;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.maindiv {
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/0552717c-9d8c-47bd-9640-4f4efa2de663/537e2c5e-c750-4d4c-9f7a-e66fe93eb977/IN-en-20240701-POP_SIGNUP_TWO_WEEKS-perspective_WEB_b00eeb83-a7e8-4b5b-8ff7-86ed92c51caf_small.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  box-shadow: 2px 50px 100px 10px rgb(30, 29, 29) inset, -2px -50px 100px 10px rgb(30, 29, 29) inset;
+  top: 0;
+}
+
+.logo {
+  height: 40px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: auto;
+  /* really imp */
+  padding-top: 24px;
+  position: relative;
+  z-index: 9;
+}
+
+#opacitybox {
+  height: 100vh;
+  width: 100%;
+  /* ye ek tareeka hai iske alawa navbar ko seedhe opacity box ke andar daal sakte hai*/
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.signin {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 20px;
+  font-weight: 550;
+}
+
+#lang {
+  border-radius: 4px;
+  background: scroll;
+  color: white;
+  padding: 8px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  top: -40px;
+  height: 100%;
+  z-index: 10;
+}
+
+.p1 {
+  font-size: 48px;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.p2 {
+  margin-top: 16px;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.p3 {
+  margin-top: 36px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+#email {
+  background-color: rgba(23, 23, 23, 0.2);
+  color: white;
+  padding: 19px 24px 17.1px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 350px;
+  border: 0.8px solid rgba(255, 255, 255, 0.5);
+}
+
+.getStart {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.greyLine {
+  background-color: rgb(42, 42, 42);
+  height: 8px;
+  width: 100%;
+  z-index: 12;
+}
+
+.sections {
+  display: flex;
+  /* flex-direction: row; */
+  margin:20px auto;
+  max-width: 70vw;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000000 !important;
+  z-index: 10;
+  height: 525px;
+}
+
+.p4 {
+  font-size: 48px;
+  font-weight: 900;
+  z-index: 1;
+}
+
+.p5 {
+  margin-top: 16px;
+  font-size: 24px;
+  z-index: 1;
+}
+
+
+.section1 {
+  display: flex;
+  /* flex-direction: row; */
+  margin: auto;
+  max-width: 70vw;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+}
+.imgSec{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  align-items: center;
+}
+.img1{
+  width: 35vw;
+  z-index: 10;
+}
+#vdo1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 768px) {
+  .sections {
+      flex-direction: column;
+      height: auto; /* Adjust height for smaller screens */
+      padding: 20px;
+  }
+
+  .imgSec {
+      width: 100%;
+      height: auto; /* Adjust height for smaller screens */
+  }
+
+  #img1, #vdo1 {
+      width: 100%;
+      height: auto;
+  }
+
+  .content .p1 {
+      font-size: 36px;
+  }
+
+  .content .p2 {
+      font-size: 18px;
+  }
+
+  .content .p3 {
+      font-size: 16px;
+  }
+
+  .content input[type="email"] {
+      width: 80%;
+      margin-bottom: 10px;
+  }
+
+  .getStart {
+      width: 80%;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar select, .navbar .signin {
+      margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar{
+    left: 70px;
+  }
+  /* .content{
+    top: -150px;
+  } */
+  span{
+    position: relative;
+    right: 22px;
+  }
+  .maindiv , #opacitybox{
+    height: 65vh;
+  }
+  .content .p1 {
+      font-size: 24px;
+  }
+
+  .content .p2 {
+      font-size: 14px;
+  }
+
+  .content .p3 {
+      font-size: 12px;
+  }
+
+  .content input[type="email"], .getStart {
+      width: 100%;
+  }
+
+  .imgSec {
+      margin: 10px 0;
+  }
+}
